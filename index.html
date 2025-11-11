@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+
+  <!-- Bootstrap + Fonts + Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/sst" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-0 fixed-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="Images/shopping-bag-icon.png" class="bg-white attireimg" alt="">
+        <span class="text-uppercase px-3 navbarbtn">Attire</span>
+      </a>
+
+      <div class="ms-auto d-flex">
+        <a href="cart.html" class="btn cartitems"><i class="fa fa-shopping-cart text-white iconbtn"></i></a>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link navbtn" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link navbtn" href="#collection">Collection</a></li>
+          <li class="nav-item"><a class="nav-link navbtn" href="#specials">Specials</a></li>
+          <li class="nav-item"><a class="nav-link navbtn" href="#blogs">Blogs</a></li>
+          <li class="nav-item"><a class="nav-link navbtn" href="#aboutus">About Us</a></li>
+          <li class="nav-item"><a class="nav-link navbtn" href="#popular">Popular</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+
+  <!-- Header -->
+  <section class="text-center mt-5">
+    <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Images/banner5.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption">
+            <h1 class="fw-bold text-uppercase">Best Collection</h1>
+            <p class="carouselP">We all need a splash of bad taste; it’s hearty, healthy, and physical.</p>
+            <div class="btn buybtn">Buy Now</div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/banner14.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption">
+            <h1 class="fw-bold text-uppercase">Biggest Sales</h1>
+            <p class="carouselP">Know your buyer and speak directly to them!</p>
+            <div class="btn buybtn">Buy Now</div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/banner15.jpg" class="d-block w-100" alt="">
+          <div class="carousel-caption">
+            <h1 class="fw-bold text-uppercase">Summer Show</h1>
+            <p class="carouselP">Designed to make you confident and stylish.</p>
+            <div class="btn buybtn">Buy Now</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Header end -->
+
+  <!-- Collection -->
+  <section class="section-bg mt-5 mb-5" id="collection">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2 class="section-text position-relative d-inline-block">New Summer Collection</h2>
+      </div>
+
+      <div class="collection-list row mt-4 gx-0 gy-3">
+        <!-- Product 1 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
+          <div class="collection-img position-relative">
+            <img src="Images/c_formal_gray_shirt.png" class="w-100" alt="">
+            <span class="position-absolute">Sale</span>
+          </div>
+          <div class="text-center">
+            <div class="rating mt-2">
+              <i class="fas fa-star starcolor"></i><i class="fas fa-star starcolor"></i><i class="fas fa-star starcolor"></i><i class="fas fa-star starcolor"></i><i class="fas fa-star starcolor"></i>
+            </div>
+            <p class="my-1">Gray Shirt</p>
+            <span class="fwbold">$45.50</span><br>
+            <button class="btn salebtn mt-2 add-to-cart"
+              data-id="1" data-name="Gray Shirt" data-price="45.50"
+              data-image="Images/c_formal_gray_shirt.png">
+              <i class="fa fa-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
+          <div class="collection-img position-relative">
+            <img src="Images/c_pant_girl.png" class="w-100" alt="">
+            <span class="position-absolute">Sale</span>
+          </div>
+          <div class="text-center">
+            <div class="rating mt-2">
+              <i class="fas fa-star starcolor"></i><i class="fas fa-star starcolor"></i><i class="fas fa-star starcolor"></i><i class="fas fa-star starcolor"></i><i class="fas fa-star starcolor"></i>
+            </div>
+            <p class="my-1">Pants</p>
+            <span class="fwbold">$25.50</span><br>
+            <button class="btn salebtn mt-2 add-to-cart"
+              data-id="2" data-name="Pants" data-price="25.50"
+              data-image="Images/c_pant_girl.png">
+              <i class="fa fa-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2 feat">
+          <div class="collection-img position-relative">
+            <img src="Images/c_polo-shirt.png" class="w-100" alt="">
+            <span class="position-absolute">Sale</span>
+          </div>
+          <div class="text-center">
+            <div class="rating mt-2">
+              <i class="fas fa-star starcolor"></i><i class="fas fa-star starcolor"></i><i class="fas fa-star starcolor"></i><i class="fas fa-star starcolor"></i><i class="fas fa-star starcolor"></i>
+            </div>
+            <p class="my-1">Polo Shirt</p>
+            <span class="fwbold">$35.50</span><br>
+            <button class="btn salebtn mt-2 add-to-cart"
+              data-id="3" data-name="Polo Shirt" data-price="35.50"
+              data-image="Images/c_polo-shirt.png">
+              <i class="fa fa-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Add the rest of your products the same way -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Specials (already has buttons) -->
+  <section class="special-section py-5" id="specials">
+    <div class="container">
+      <div class="section-title text-center">
+        <h2 class="section-text position-relative d-inline-block">Special Collection</h2>
+      </div>
+      <div class="special-list row mt-4 gx-0 gy-3">
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img-design position-relative overflow-hidden">
+            <img src="Images/special_product_1.jpg" class="w-100 mb-2" alt="">
+          </div>
+          <div class="text-center">
+            <p class="my-1">Turtle Neck</p>
+            <span class="fwbold">$35.50</span><br>
+            <button class="btn salebtn mt-2 add-to-cart"
+              data-id="8" data-name="Turtle Neck" data-price="35.50"
+              data-image="Images/special_product_1.jpg">
+              <i class="fa fa-cart-plus"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+        <!-- other special items the same way -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer etc (unchanged) -->
+  <footer class="footer-section bg-dark text-white text-center py-4">
+    <p class="m-0">© 2025 Attire. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="JS/script.js"></script>
+  <script src="JS/cart.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="JS/code.jquery.com_jquery-3.7.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
